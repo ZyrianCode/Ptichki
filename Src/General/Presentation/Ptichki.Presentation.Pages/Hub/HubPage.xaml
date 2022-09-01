@@ -1,0 +1,131 @@
+﻿<UserControl x:Class="Ptichki.Presentation.Pages.Hub.HubPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+
+
+        <StackPanel>
+
+            <Button
+                Height="30" 
+                HorizontalAlignment="Center"
+            
+                Content="Birds"
+                Command="{Binding OpenBirds}"
+            />
+
+            <Button 
+                Height="30"
+                HorizontalAlignment="Center"
+            
+                Content="BirdSpecies"
+                Command="{Binding OpenBirdsTypes}"
+            />
+
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"
+            
+                Content="Customers"
+                Command="{Binding OpenCustomers}"
+            />
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"
+            
+                Content="Departments"
+                Command="{Binding OpenDepartments}"
+            />
+
+            <Button 
+                Height="30"
+                HorizontalAlignment="Center"
+            
+                Content="Employees"
+                Command="{Binding OpenEmployees}"
+            />
+
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"
+            
+                Content="Equipment"
+                Command="{Binding OpenEquipment}"
+            />
+
+            <Button 
+                Height="30"
+                HorizontalAlignment="Center"
+            
+                Content="Orders"
+                Command="{Binding OpenOrders}"
+            />
+
+            <Button 
+                Height="30"
+                HorizontalAlignment="Center"
+                Content="Parameters"
+                Command="{Binding OpenParameters}"
+            />
+
+            <Button 
+                Height="30"
+                HorizontalAlignment="Center"
+                Content="Processes"
+                Command="{Binding OpenProcesses}"
+            />
+
+
+            <Button 
+                Height="30"
+                HorizontalAlignment="Center"
+                Content="ProcessTechnology"
+                Command="{Binding OpenProcessTechnologies}"
+            />
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"
+                Content="ProductCatalog"
+                Command="{Binding OpenProductCatalog}"
+            />
+
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center" 
+                Content="Stages"
+                Command="{Binding OpenStages}"
+            />
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"   
+                Content="Works"
+                Command="{Binding OpenWorks}"
+            />
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"   
+                Content="Batches"
+                Command="{Binding OpenBatches}"
+            />
+
+            <Button
+                Height="30"
+                HorizontalAlignment="Center"   
+                Content="EmployeesInDepartments"
+                Command="{Binding OpenEmployeesInDepartments}"
+            />
+
+        </StackPanel>
+    </Grid>
+</UserControl>

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Authentication.Core.Abstractions.Data\Authentication.Core.Abstractions.Data.csproj" />
+    <ProjectReference Include="..\Authentication.Core.Abstractions.Services\Authentication.Core.Abstractions.Services.csproj" />
+    <ProjectReference Include="..\Authentication.Core.Abstractions\Authentication.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

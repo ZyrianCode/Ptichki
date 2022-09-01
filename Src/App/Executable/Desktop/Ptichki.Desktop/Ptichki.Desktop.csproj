@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <StartupObject>Ptichki.Desktop.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="5.0.2" />
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.39" />
+    <PackageReference Include="PasswordBoxMVVM" Version="1.0.5" />
+    <PackageReference Include="SimpleModal.WPF" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\General\Data\Authentication.Data\Ptichki.Data.Authentication.csproj" />
+    <ProjectReference Include="..\..\..\..\General\Data\Ptichki.Data\Ptichki.Data.csproj" />
+    <ProjectReference Include="..\..\..\..\General\Domain\Ptichki.Domain\Ptichki.Domain.csproj" />
+    <ProjectReference Include="..\..\..\..\General\Presentation\Ptichki.Presentation.Pages\Ptichki.Presentation.Pages.csproj" />
+    <ProjectReference Include="..\..\..\..\General\Presentation\Ptichki.Presentation.ViewModels\Ptichki.Presentation.ViewModels.csproj" />
+    <ProjectReference Include="..\..\..\..\Utilities\Librares\Auth\Authentication.Core.Abstractions.Data\Authentication.Core.Abstractions.Data.csproj" />
+    <ProjectReference Include="..\..\..\..\Utilities\Librares\Auth\Authentication.Core.Abstractions.Services\Authentication.Core.Abstractions.Services.csproj" />
+    <ProjectReference Include="..\..\..\..\Utilities\Librares\Auth\Authentication.Core.Abstractions\Authentication.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\..\Utilities\Librares\Auth\Authentication.Core.Services\Authentication.Core.Services.csproj" />
+    <ProjectReference Include="..\..\..\..\Utilities\Librares\Auth\Authentication.Tools\Authentication.Tools.csproj" />
+    <ProjectReference Include="..\..\..\..\Utilities\Librares\Mvvm\MVVMEssentials\MVVMEssentials.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

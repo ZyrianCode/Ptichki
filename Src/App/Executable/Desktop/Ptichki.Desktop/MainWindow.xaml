@@ -1,0 +1,143 @@
+﻿<Window x:Class="Ptichki.Desktop.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+
+        xmlns:modalControl="clr-namespace:ModalControl;assembly=ModalControl"
+
+        xmlns:pages="clr-namespace:Ptichki.Presentation.Pages;assembly=Ptichki.Presentation.Pages"
+        xmlns:components="clr-namespace:Ptichki.Desktop.Components"
+        xmlns:operationsViewModels="clr-namespace:Ptichki.Presentation.ViewModels.Operations;assembly=Ptichki.Presentation.ViewModels"
+        xmlns:listingsViewModels="clr-namespace:Ptichki.Presentation.ViewModels.Listings;assembly=Ptichki.Presentation.ViewModels"
+        xmlns:layouts="clr-namespace:Ptichki.Presentation.ViewModels.Layouts;assembly=Ptichki.Presentation.ViewModels"
+        xmlns:hubViewModels="clr-namespace:Ptichki.Presentation.ViewModels.Hubs;assembly=Ptichki.Presentation.ViewModels"
+        xmlns:hubPages="clr-namespace:Ptichki.Presentation.Pages.Hub;assembly=Ptichki.Presentation.Pages"
+        xmlns:dbListingsPages="clr-namespace:Ptichki.Presentation.Pages.DbListings;assembly=Ptichki.Presentation.Pages"
+        xmlns:addingPages="clr-namespace:Ptichki.Presentation.Pages.Adding;assembly=Ptichki.Presentation.Pages"
+        xmlns:listingsPages="clr-namespace:Ptichki.Presentation.Pages.Listings;assembly=Ptichki.Presentation.Pages"
+        xmlns:authenticationPages="clr-namespace:Ptichki.Presentation.Pages.Authentication;assembly=Ptichki.Presentation.Pages"
+        xmlns:authorizationViewModels="clr-namespace:Ptichki.Presentation.ViewModels.Authorization;assembly=Ptichki.Presentation.ViewModels"
+        xmlns:servicePages="clr-namespace:Ptichki.Presentation.Pages.Service;assembly=Ptichki.Presentation.Pages"
+        xmlns:serviceViewModels="clr-namespace:Ptichki.Presentation.ViewModels.Service;assembly=Ptichki.Presentation.ViewModels"
+
+        mc:Ignorable="d"
+        Title="MainWindow" 
+        Height="450" 
+        Width="800">
+
+    <Grid Background="#FF172C48">
+        <Grid.Resources>
+
+            <DataTemplate DataType="{x:Type serviceViewModels:HomeViewModel}">
+                <servicePages:HomePage />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type authorizationViewModels:LoginViewModel}">
+                <authenticationPages:LoggingPage />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type authorizationViewModels:RegisterViewModel}">
+                <authenticationPages:RegistrationPage />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type authorizationViewModels:AccountViewModel}">
+                <authenticationPages:AccountPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type layouts:LayoutViewModel}">
+                <components:Layout/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:PeopleListingViewModel}">
+                <listingsPages:PeopleListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type operationsViewModels:AddingPersonViewModel}">
+                <addingPages:AddingPersonPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type operationsViewModels:AddingPeopleViewModel}">
+                <addingPages:AddingPeoplePage />
+            </DataTemplate>
+
+
+            <DataTemplate DataType="{x:Type operationsViewModels:AddingEmployeesViewModel}">
+                <addingPages:AddingEmployeesPage />
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type hubViewModels:HubViewModel}">
+                <hubPages:HubPage/>
+            </DataTemplate>
+
+
+
+            <DataTemplate DataType="{x:Type listingsViewModels:BirdsListingViewModel}">
+                <dbListingsPages:BirdsListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:BirdsTypesListingViewModel}">
+                <dbListingsPages:BirdTypesListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:CustomersListingViewModel}">
+                <dbListingsPages:CustomersListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:DepartmentsListingViewModel}">
+                <dbListingsPages:DepartmentsListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:EmployeesListingViewModel}">
+                <dbListingsPages:EmployeesListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:EquipmentListingViewModel}">
+                <dbListingsPages:EquipmentListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:OrdersListingViewModel}">
+                <dbListingsPages:OrdersListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:ParametersListingViewModel}">
+                <dbListingsPages:ParametersListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:ProcessesListingViewModel}">
+                <dbListingsPages:ProccessesListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:ProcessesTechnologiesListingViewModel}">
+                <dbListingsPages:ProccessTechnologiesListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:ProductCatalogListingViewModel}">
+                <dbListingsPages:ProductCatalogListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:StagesListingViewModel}">
+                <dbListingsPages:StagesListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:WorksListingViewModel}">
+                <dbListingsPages:WorksListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:EmployeesInDepartmentsListingViewModel}">
+                <dbListingsPages:EmployeesInDepartmentsListingPage/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type listingsViewModels:BatchesListingViewModel}">
+                <dbListingsPages:BatchesListingPage/>
+            </DataTemplate>
+
+        </Grid.Resources>
+
+        <modalControl:Modal Panel.ZIndex="1" IsOpen="{Binding IsOpen}">
+            <ContentControl Content="{Binding CurrentModalViewModel}" />
+        </modalControl:Modal>
+
+        <ContentControl Content="{Binding CurrentViewModel}" />
+    </Grid>
+</Window>

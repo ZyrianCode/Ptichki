@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MICS.Helpers.Abstractions\MICS.Helpers.Abstractions.csproj" />
+    <ProjectReference Include="..\MICS.Helpers.Core.Abstractions\MICS.Helpers.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

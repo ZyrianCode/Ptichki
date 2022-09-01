@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\Shared\Tools\Ptichki.Tools.Connection.Models\Ptichki.Tools.Connection.Models.csproj" />
+    <ProjectReference Include="..\..\Data\Ptichki.Data.Models\Ptichki.Data.Models.csproj" />
+  </ItemGroup>
+
+</Project>

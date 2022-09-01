@@ -1,0 +1,11 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\Librares\DbConnection\Micqrs\MICS.Helpers.Core.Abstractions\MICS.Helpers.Core.Abstractions.csproj" />
+  </ItemGroup>
+
+</Project>

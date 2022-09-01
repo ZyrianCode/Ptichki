@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="5.0.16" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="5.0.16">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Caching.SqlServer" Version="5.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\Librares\DbConnection\Micqrs\MICS.Helpers.Behaviors.Abstractions\MICS.Helpers.Behaviors.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Utilities\Librares\DbConnection\Micqrs\MICS.Helpers.Core.Abstractions\MICS.Helpers.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Utilities\Shared\Tools\Ptichki.Tools.Misc\Ptichki.Tools.Misc.csproj" />
+    <ProjectReference Include="..\..\Domain\Ptichki.Domain.Abstractions\Ptichki.Domain.Abstractions.csproj" />
+    <ProjectReference Include="..\..\Domain\Ptichki.Domain\Ptichki.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Pipes\" />
+  </ItemGroup>
+
+</Project>

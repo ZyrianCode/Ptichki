@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Utilities\Librares\DbConnection\Micqrs\MICS.Helpers.Abstractions\MICS.Helpers.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Utilities\Librares\DbConnection\Micqrs\MICS.Helpers.Core.Abstractions\MICS.Helpers.Core.Abstractions.csproj" />
+    <ProjectReference Include="..\..\..\Utilities\Librares\DbConnection\Micqrs\MICS.Helpers\MICS.Helpers.csproj" />
+    <ProjectReference Include="..\..\..\Utilities\Librares\Mvvm\MVVMEssentials\MVVMEssentials.csproj" />
+    <ProjectReference Include="..\..\..\Utilities\Shared\Tools\Ptichki.Tools.Connection\Ptichki.Tools.Connection.csproj" />
+    <ProjectReference Include="..\..\Mappings\Ptichki.Mappings.Tools\Ptichki.Mappings.Tools.csproj" />
+  </ItemGroup>
+
+</Project>

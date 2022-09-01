@@ -1,0 +1,51 @@
+﻿<UserControl x:Class="Ptichki.Presentation.Pages.DbListings.BirdsListingPage"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+
+            <TextBlock FontSize="28" Text="Birds" />
+            <Button
+                Margin="10 0 0 0"
+                Padding="10 5"
+                VerticalAlignment="Center"
+                Command="{Binding AddBirdCommand}"
+                Content="Add Bird" />
+
+            <Button
+                Margin="10 0 0 0"
+                Padding="10 5"
+                VerticalAlignment="Center"
+                Command="{Binding AddBirdsCommand}"
+                Content="Add Birds" />
+
+        </StackPanel>
+
+        <ListView
+            Grid.Row="1"
+            Margin="0 20 0 0"
+            ItemsSource="{Binding Birds}">
+
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn DisplayMemberBinding="{Binding Bird.BirdName}" Header="Name" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Bird.BirdSex}" Header="Sex" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Bird.BirdAge}" Header="Age" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Bird.BirdWeight}" Header="Weight" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Bird.FeedConsumption}" Header="FeedConsumption" />
+                    <GridViewColumn DisplayMemberBinding="{Binding Bird.WaterConsumption}" Header="WaterConsumption" />
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+    </Grid>
+</UserControl>
